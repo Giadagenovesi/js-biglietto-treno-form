@@ -24,7 +24,17 @@ sumbitBtn.addEventListener("click", function() {
     const userAgeInput = document.getElementById("user-age");
     const userAge = parseInt (userAgeInput.value);
 
-    console.log(kmNumber, userAge);
+    const userNameInput = document.getElementById("user-name");
+    const userName = userNameInput.value;
+
+    const cabinNumber = Math.floor(Math.random() * 9) + 1;
+    console.log(cabinNumber);
+
+    const codeNumber = Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000;
+    console.log(codeNumber);
+    
+
+    console.log(kmNumber, userAge, userName);
 
     //LOGICA
     //Prezzo biglietto
@@ -43,12 +53,27 @@ sumbitBtn.addEventListener("click", function() {
     const message = "Il prezzo del tuo biglietto è di €" + ticketPrice.toFixed (2)
     console.log (message)
 
+    const name = "Benvenuto/a a bordo " + userName;
+    console.log(name)
+
+    const cabin = "La tua cabina è la numero " + cabinNumber;
+    console.log(cabin)
+
+    const code = "Codice biglietto: " + codeNumber;
+    console.log(code)
+
     // Ripulisco i campi di input
     kmNumberInput.value = "";
     userAgeInput.value = "";
 
     // OUTPUT
     document.getElementById('result').innerHTML = message;
+    document.getElementById('passenger').innerHTML = name;
+    document.getElementById('cabin-number').innerHTML = cabin;
+    document.getElementById('code').innerHTML = codeNumber;
+
+
+
 });
     
 

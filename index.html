@@ -15,64 +15,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div class="wrapper">
-        
-        <header>
-            <div class="logo-container">
-                <img class="logo-img" src="img/Treno.png" alt="">
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <h1 class="pb-2">BENVENUTI IN BOOLEAN TRAIN</h1>
-                <div class="travel">
-                    <div class="row">
-                        <div class="col-30">
-                            <ul class="pb-1">
-                                <li>
-                                    <h4 class="subtitle pb-1">SCONTI E PROMOZIONI</h4>
-                                </li>
-                                <li>Viaggia a soli 0,21 € al km</li>
-                                <li>Per gli under 18 sconto del 20%</li>
-                                <li>Per gli over 65 sconto del 40%</li>
-                            </ul>
-                        </div>
-                        <div class="col-60">
-                            <img src="img/kids.jpg" alt="">
-                            <img src="img/travel.jpeg" alt="">
-                        </div>
+<body>  
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="img/Treno.png" alt="">
+         </div>
+    </header>
+    <main class="pb-2">
+        <div class="container">
+            <h1 class="pb-2">BENVENUTI IN BOOLEAN TRAIN</h1>
+            <div class="travel">
+                <div class="row">
+                    <div class="col-30">
+                        <ul class="pb-1">
+                            <li>
+                                <h4 class="subtitle pb-1">SCONTI E PROMOZIONI</h4>
+                            </li>
+                            <li>Viaggia a soli 0,21 € al km</li>
+                            <li>Per gli under 18 sconto del 20%</li>
+                            <li>Per gli over 65 sconto del 40%</li>
+                        </ul>
+                    </div>
+                    <div class="col-60">
+                        <img src="img/kids.jpg" alt="">
+                        <img src="img/travel.jpeg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <!-- Data Form -->
-                <div class="form">
-                    <!-- Km Number -->
-                    <label for="km-number">Quanti kilometri vuoi percorrere?</label>
-                    <input type="number" id="km-number" name="quantity" min="">
-                    <!-- /Km Number -->
+        </div>
+        <div class="container">
+            <!-- Data Form -->
+            <div class="form d-flex justify-evenly">
+                <!-- Name -->
+                <label for="user-name">Nome e Cognome</label>
+                <input type="text" id="user-name">
+                <!-- /Name -->
+
+                <!-- Km Number -->
+                <label for="km-number">Quanti kilometri vuoi percorrere?</label>
+                <input type="number" id="km-number" name="quantity" min="">
+                <!-- /Km Number -->
             
-                    <!-- User Age -->
-                    <label for="user-age">Qual è la tua età?</label>
-                    <input type="number" id="user-age" name="quantity" min="" >
-                    <!-- /User Age -->
+                <!-- User Age -->
+                <label for="user-age">Qual è la tua età?</label>
+                <input type="number" id="user-age" name="quantity" min="" >
+                <!-- /User Age -->
             
-                    <button id="submit-btn">Calcola prezzo</button>
-                </div>
-                <!-- /Data Form -->
-                
+                <button class="btn" id="submit-btn">Calcola prezzo</button>
             </div>
-            <div class="container">
-                <h2 id="result">IL PREZZO DEL TUO PROSSIMO VIAGGIO È..</h2>
-            </div>
-           
-        </main>
-        
-    </div>
-    
-   
-   
+            <!-- /Data Form -->  
+        </div>
+        <div class="container d-flex justify-evenly">
+            <h3 id="passenger">Nome passeggero</h3>
+            <h3 id="cabin-number">Carrozza</h3>
+            <h3 id="code">Codice CP</h3>
+            <h3 id="result">IL PREZZO DEL TUO PROSSIMO VIAGGIO È..</h3>
+         </div>   
+    </main>
+
     <!-- JS  -->
     <script src="js/script.js"></script>
 </body>
