@@ -46,6 +46,9 @@ sumbitBtn.addEventListener("click", function() {
     // Ripulisco i campi di input
     kmNumberInput.value = "";
     userAgeInput.value = "";
+
+    // OUTPUT
+    document.getElementById('result').innerHTML = message;
 });
     
 

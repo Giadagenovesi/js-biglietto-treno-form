@@ -8,21 +8,72 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div>
-
-        <label for="km-number">Quanti kilometri vuoi percorrere?</label>
-        <input type="number" id="km-number" name="quantity" min="">
-
-        <label for="user-age">Qual è la tua età?</label>
-        <input type="number" id="user-age" name="quantity" min="" >
-
-
-        <button id="submit-btn">Calcola prezzo</button>
+    <div class="wrapper">
+        
+        <header>
+            <div class="logo-container">
+                <img class="logo-img" src="img/Treno.png" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="pb-2">BENVENUTI IN BOOLEAN TRAIN</h1>
+                <div class="travel">
+                    <div class="row">
+                        <div class="col-30">
+                            <ul class="pb-1">
+                                <li>
+                                    <h4 class="subtitle pb-1">SCONTI E PROMOZIONI</h4>
+                                </li>
+                                <li>Viaggia a soli 0,21 € al km</li>
+                                <li>Per gli under 18 sconto del 20%</li>
+                                <li>Per gli over 65 sconto del 40%</li>
+                            </ul>
+                        </div>
+                        <div class="col-60">
+                            <img src="img/kids.jpg" alt="">
+                            <img src="img/travel.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Data Form -->
+                <div class="form">
+                    <!-- Km Number -->
+                    <label for="km-number">Quanti kilometri vuoi percorrere?</label>
+                    <input type="number" id="km-number" name="quantity" min="">
+                    <!-- /Km Number -->
+            
+                    <!-- User Age -->
+                    <label for="user-age">Qual è la tua età?</label>
+                    <input type="number" id="user-age" name="quantity" min="" >
+                    <!-- /User Age -->
+            
+                    <button id="submit-btn">Calcola prezzo</button>
+                </div>
+                <!-- /Data Form -->
+                
+            </div>
+            <div class="container">
+                <h2 id="result">IL PREZZO DEL TUO PROSSIMO VIAGGIO È..</h2>
+            </div>
+           
+        </main>
+        
     </div>
-
-    <h2 id="result"></h2>
+    
+   
+   
+    <!-- JS  -->
     <script src="js/script.js"></script>
 </body>
 </html>
