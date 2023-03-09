@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <label for="km-number">Quanti kilometri vuoi percorrere?</label>
+        <input type="text" id="km-number">
+
+        <label for="user-age">Quanti anni hai?</label>
+        <select  id="user-age">
+            <option value=""></option>
+            <option value="minorenne">Meno di 18 anni</option>
+            <option value="altro">Tra i 18 e i 64</option>
+            <option value="over">Dai 65 in su</option>
+        </select>
+
+        <button id="submit-btn">Calcola prezzo</button>
+    </div>
+
+    <h2 id="result"></h2>
+    <script src="js/script.js"></script>
+</body>
+</html>
